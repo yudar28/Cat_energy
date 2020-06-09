@@ -1,0 +1,10 @@
+@mixin indent-reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin font ($font_size, $font_weight, $line_height) {
+  font-size: $font_size;
+  font-weight: $font_weight;
+  line-height: $line_height;
+}
