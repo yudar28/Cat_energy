@@ -1,0 +1,43 @@
+.advantages {
+  width: 100%;
+}
+
+.advantages__title {
+  @include indent-reset;
+  padding-left: 6.25%;
+  @include font(36px, 400, 60px);
+}
+
+.advantages__list {
+  @include indent-reset;
+  margin: 31px auto 42px;
+  list-style-type: none;
+
+  width: 87.5%;
+}
+
+.advantages__item {
+  margin-bottom: 22px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.advantages__img {
+  flex: none;
+
+  margin-right: 19px;
+  margin-top: -2px;
+
+  width: 60px;
+  height: 60px;
+  background-color: $leaf-color;
+}
+
+.advantages__description {
+  @include indent-reset;
+
+  @include font(14px, 400, 18px);
+  font-family: "Arial", sans-serif;
+}

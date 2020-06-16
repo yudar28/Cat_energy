@@ -1,0 +1,134 @@
+.example {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.example__title {
+  @include indent-reset;
+  padding: 17px 6.25%;
+  @include font(36px, 400, 60px);
+}
+
+.example__description {
+  @include indent-reset;
+  padding: 6px 7% 5px 6.25%;
+
+  font-family: "Arial", sans-serif;
+  @include font(14px, 400, 18px);
+  color: #444444;
+}
+
+.example__number {
+  @include indent-reset;
+  margin: 20px auto 26px;
+  width: 87.5%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.example__item {
+  @include indent-reset;
+  padding-top: 13px;
+  flex: none;
+
+  width: 124px;
+  min-height: 56px;
+  box-sizing: border-box;
+  position: relative;
+
+  @include font(24px, 400, 24px);
+  color: #111111;
+  text-align: center;
+  text-transform: uppercase;
+
+  border: 1px solid #cdcdcd;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 46px;
+    left: 16px;
+
+    width: 87px;
+    height: 21px;
+    padding: 0 4px;
+    box-sizing: border-box;
+
+    font-family: "Arial", sans-serif;
+    @include font(12px, 400, 12px);
+    color: #444444;
+    text-transform: none;
+
+    background-color: #f2f2f2;
+  }
+}
+
+.example__item--kg {
+  &::after {
+    content: "снижение веса";
+  }
+}
+
+.example__item--days {
+  &::after {
+    content: "затрачено времени";
+    left: 17px;
+  }
+}
+
+.example__cost {
+  width: 87.5%;
+  margin: 0 auto;
+  padding-top: 8px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+
+  text-align: center;
+  text-transform: uppercase;
+  @include font(14px, 400, 20px);
+}
+
+.example__cost p {
+  @include indent-reset;
+
+  &:first-of-type {
+    padding-right: 3px;
+  }
+}
+
+.example__picture {
+  display: block;
+  margin: 35px auto 20px;
+
+  height: 239px;
+  width: 320px;
+}
+
+.example__scale {
+  margin: 0 auto;
+  padding: 12px 0 36px;
+  width: 64%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include font(16px, 400, 20px);
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.example__scale p {
+  @include indent-reset;
+}
+
+.example__scale input {
+  width: 84px;
+}

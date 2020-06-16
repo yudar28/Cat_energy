@@ -1,3 +1,53 @@
 .select-program {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+}
 
+.select-program__wrapper {
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat center;
+  background-size: 100% auto;
+  background-color: $leaf-color;
+}
+
+.select-program__title {
+  @include font(36px, 400, 36px);
+  padding: 27px 0 25px;
+  margin: 0 auto;
+  width: 250px;
+}
+
+.select-program__description {
+  @include indent-reset;
+  @include font(14px, 400, 14px);
+  text-transform: uppercase;
+  padding-bottom: 167px;
+}
+
+.select-program__img {
+  display: block;
+  margin: -139px auto 3px;
+}
+
+.select-program__btn {
+  margin: 0 auto;
+  padding-top: 11px;
+  display: inline-block;
+  box-sizing: border-box;
+
+  @include font(14px, 400, 18px);
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: $leaf-color;
+  width: 280px;
+  height: 40px;
+
+  &:hover {
+    background-color: $grass;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

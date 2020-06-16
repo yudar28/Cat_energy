@@ -1,0 +1,31 @@
+.social {
+  list-style-type: none;
+  @include indent-reset;
+  margin: 20px auto 16px;
+  padding-right: 9px;
+
+  width: 45%;
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social__item:hover svg {
+  fill: $leaf-color;
+}
+
+.social__item:active svg {
+  opacity: 0.3;
+}
+
+.social__item--fb {
+  margin-top: 2px;
+}
+
+.social__item--vk {
+  margin-top: -2px;
+}
